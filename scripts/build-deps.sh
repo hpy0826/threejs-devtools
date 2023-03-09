@@ -32,3 +32,8 @@ sed -i -e 's/__THREE_DEVTOOLS__/__INTERNAL_THREE_DEVTOOLS__/g' src/content/three
 echo 'export default (THREE) => {'        > src/content/TransformControls.js
 cat node_modules/three/examples/js/controls/TransformControls.js >> src/content/TransformControls.js
 echo '};'                                 >> src/content/TransformControls.js
+
+
+echo 按任意键继续
+read -n 1
+echo 继续运行

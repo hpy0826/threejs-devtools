@@ -22,6 +22,7 @@ const target = new class ThreeDevToolsTarget extends EventTarget {
     super();
     this[$devtoolsReady] = false;
     this[$backlog] = [];
+    this.license = "WanRunBIM";
     this.addEventListener('devtools-ready', e => {
       this[$devtoolsReady] = true;
       for (let event of this[$backlog]) {
